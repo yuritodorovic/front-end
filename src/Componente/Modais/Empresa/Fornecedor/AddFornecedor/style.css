@@ -1,0 +1,102 @@
+.add-fornecedor-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    backdrop-filter: blur(3px);
+    z-index: 9999;
+    background: #000000bd;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.add-fornecedor-content{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 400px;
+    background: var(--white);
+    border-radius: 10px;
+   
+    overflow: hidden;
+}
+.add-fornecedor-header{
+    width: 100%;
+    height: 50px;
+    background: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+.add-fornecedor-header > span {
+    color:  var(--white);
+    margin-left: 10px;
+    user-select: none;
+}
+.add-fornecedor-back-button{
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.986);
+    padding: 5px;
+    font-size: 20px;
+    transition: 0.2s;
+}
+.add-fornecedor-back-button:hover{
+    color: var(--text-color);
+}
+.add-fornecedor-form-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+    padding: 10px;
+}
+.add-fornecedor-form-input{
+    display: flex;
+    flex-direction: column;
+}
+.add-fornecedor-form-input > span {
+    color: var(--text-color);
+    user-select: none;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+.add-fornecedor-form-input > input{
+    color: var(--text-color);
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 0;
+    background: transparent;
+    outline: 1px solid var(--secondary-color);
+    transition: 0.2s;
+}
+.add-fornecedor-form-input > input:focus{
+    outline: 1px solid var(--primary-color);
+}
+.add-fornecedor-confirm-buttom-container{
+    padding: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.add-fornecedor-confirm-buttom{
+    background: var(--primary-color);
+    padding: 4px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.add-fornecedor-confirm-buttom > span {
+    color: var(--white);
+    user-select: none;
+    font-size: 1rem;
+}
+.add-fornecedor-confirm-buttom:hover{
+    background: var(--primary-hover-color);
+}
